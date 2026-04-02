@@ -9,28 +9,5 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Portfolio page -->
-  <url>
-    <loc>https://nayeem.app/portfolio</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog page (if any) -->
-  <url>
-    <loc>https://nayeem.app/blog</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Contact page -->
-  <url>
-    <loc>https://nayeem.app/contact</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
 
 </urlset>
