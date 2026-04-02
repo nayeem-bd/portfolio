@@ -3,104 +3,327 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon | Md. Nimuzzaman</title>
+  <title>Md. Nimuzzaman | Software Engineer</title>
+  <meta name="description" content="Md. Nimuzzaman — Software Engineer at Pathao. Expertise in Go, Laravel, Vue.js, Microservices, Docker, Kubernetes, and Monitoring." />
+  <meta name="author" content="Md. Nimuzzaman" />
+  <link rel="icon" href="/favicon.ico" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-    
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+    :root {
+      --bg1:#0b0b0f;
+      --bg2:#12121a;
+      --card:#141420;
+      --text:#ffffff;
+      --muted:#a7a7b4;
+      --border:rgba(255,255,255,0.10);
+      --accent:#7c5cff;
+      --accent2:#00c2ff;
+      --good:#22c55e;
+      --shadow: 0 20px 60px rgba(0,0,0,0.55);
     }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,0.25), transparent 60%),
+        radial-gradient(1000px 500px at 85% 0%, rgba(0,194,255,0.18), transparent 55%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    a { color: inherit; text-decoration: none; }
 
     .container {
-      max-width: 600px;
-      padding: 2rem;
+      width:100%;
+      max-width:980px;
+      background: rgba(20,20,32,0.75);
+      border: 1px solid var(--border);
+      border-radius:18px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(10px);
     }
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
+    header.header {
+      padding:28px 28px 18px;
+      border-bottom: 1px solid var(--border);
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-wrap:wrap;
     }
 
-    p {
-      font-size: 1.2rem;
-      font-weight: 300;
-      color: #aaa;
-      margin-bottom: 2rem;
+    .titleBlock h1 {
+      margin:0;
+      font-size:2rem;
+      line-height:1.15;
+      letter-spacing:0.2px;
     }
 
-    .tag {
-      display: inline-block;
-      padding: 0.4rem 0.8rem;
-      border: 1px solid #555;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      margin-bottom: 1.5rem;
-      color: #bbb;
+    .subtitle {
+      margin:8px 0 0;
+      color:var(--muted);
+      font-weight:300;
+      max-width: 70ch;
     }
 
-    .buttons {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
+    .badges {
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:flex-end;
     }
 
+    .badge {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      color:#d7d7e2;
+      font-size:0.9rem;
+      background: rgba(255,255,255,0.04);
+      white-space:nowrap;
+    }
+
+    .badgeDot {
+      width:9px; height:9px; border-radius:50%;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      display:inline-block;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap:18px;
+      padding:18px 18px 22px;
+    }
+
+    @media (max-width: 860px){
+      .grid { grid-template-columns: 1fr; }
+      .badges { justify-content:flex-start; }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius:16px;
+      padding:18px;
+    }
+
+    .card h2 { margin:0 0 12px; font-size:1.1rem; letter-spacing:0.2px; }
+
+    .muted { color: var(--muted); }
+
+    .summary { margin:0; color:#d7d7e2; font-weight:300; line-height:1.75; }
+
+    .kv {
+      display:grid;
+      grid-template-columns: 130px 1fr;
+      gap:10px 14px;
+      margin-top:12px;
+    }
+    .kv .k { color:var(--muted); font-size:0.92rem; }
+    .kv .v a { color:#eaeafe; text-decoration:none; border-bottom:1px dashed rgba(255,255,255,0.25); }
+    .kv .v a:hover { border-bottom-color: rgba(255,255,255,0.6); }
+
+    .btnRow { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
     .btn {
-      display: inline-block;
-      padding: 0.5rem 1.2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.3s ease;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:500;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      transition: transform .15s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.18); }
+    .btnPrimary { background: linear-gradient(135deg, rgba(124,92,255,0.95), rgba(0,194,255,0.75)); border-color: rgba(255,255,255,0.15); }
+    .btnPrimary:hover { background: linear-gradient(135deg, rgba(124,92,255,1), rgba(0,194,255,0.85)); }
+
+    .list { margin:0; padding-left:18px; color:#d7d7e2; line-height:1.8; font-weight:300; }
+
+    .pillRow { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .pill {
+      font-size:0.88rem;
+      padding:7px 10px;
+      border-radius:999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      color:#e3e3ef;
+      white-space:nowrap;
     }
 
-    .email-link {
-      background: #ff4d5a;
-      color: #fff;
-    }
-
-    .email-link:hover {
-      background: #e13d48;
-    }
-
-    .linkedin-link {
-      background: #0077b5;
-      color: #fff;
-    }
-
-    .linkedin-link:hover {
-      background: #005582;
-    }
+    .timeline { display:flex; flex-direction:column; gap:12px; margin-top:8px; }
+    .tItem { border:1px solid var(--border); background: rgba(0,0,0,0.18); border-radius:14px; padding:14px; }
+    .tTop { display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:baseline; }
+    .tRole { font-weight:700; }
+    .tMeta { color: var(--muted); font-size:0.92rem; }
+    .tBullets { margin:10px 0 0; padding-left:18px; color:#d7d7e2; font-weight:300; line-height:1.75; }
 
     footer {
-      font-size: 0.8rem;
-      color: #555;
-      margin-top: 2rem;
+      padding:14px 18px 18px;
+      border-top: 1px solid var(--border);
+      color: rgba(255,255,255,0.45);
+      font-size: 0.85rem;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:space-between;
+      align-items:center;
     }
+
+    .status { display:inline-flex; gap:8px; align-items:center; color: rgba(255,255,255,0.6); }
+    .statusDot { width:10px;height:10px;border-radius:50%; background: var(--good); box-shadow: 0 0 0 4px rgba(34,197,94,0.12); }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="tag">Software Engineer</div>
-    <h1>Coming Soon</h1>
-    <p>Hello, I’m Md. Nimuzzaman. My portfolio website is currently under development.<br/>Stay tuned for something awesome!</p>
-    
-    <div class="buttons">
-      <a class="btn email-link" href="mailto:nimuzzamanj@gmail.com">📧 Email Me</a>
-      <a class="btn linkedin-link" href="https://linkedin.com/in/nimuzzaman" target="_blank">💼 LinkedIn</a>
-    </div>
-    
-    <footer>© <span id="year"></span> Md. Nimuzzaman — All rights reserved</footer>
-  </div>
+  <main class="container" role="main">
+
+    <header class="header">
+      <div class="titleBlock">
+        <h1>Md. Nimuzzaman</h1>
+        <p class="subtitle">
+          Software Engineer at Pathao | Go, Laravel, Vue.js | REST APIs · Microservices · Docker · Kubernetes · Monitoring
+          <br />
+          <span class="muted">Jessore, Khulna, Bangladesh</span>
+        </p>
+      </div>
+
+      <nav class="badges" aria-label="Highlights">
+        <span class="badge"><span class="badgeDot"></span>Software Engineer</span>
+        <span class="badge">DevOps & Monitoring</span>
+        <span class="badge">Microservices</span>
+      </nav>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Summary</h2>
+        <p class="summary">
+          Software Engineer at Pathao Ltd with expertise in Go, Laravel, Vue.js, PostgreSQL, Docker, Kubernetes, and REST APIs.
+          Skilled in building high-performance, scalable web applications, implementing microservices architectures, and delivering
+          solutions that improve user engagement and operational efficiency. Experienced in DevOps, monitoring, and system integrations.
+          Passionate about solving complex problems and collaborating with cross-functional teams.
+        </p>
+
+        <div class="btnRow" aria-label="Primary links">
+          <a class="btn btnPrimary" href="mailto:nimuzzamanj@gmail.com">Email</a>
+          <a class="btn" href="tel:+8801912986866">Call</a>
+          <a class="btn" href="https://www.linkedin.com/in/nimuzzaman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="https://nayeem.app/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        </div>
+
+        <div class="kv" aria-label="Contact details">
+          <div class="k">Mobile</div><div class="v"><a href="tel:+8801912986866">+880 1912-986866</a></div>
+          <div class="k">Email</div><div class="v"><a href="mailto:nimuzzamanj@gmail.com">nimuzzamanj@gmail.com</a></div>
+          <div class="k">LinkedIn</div><div class="v"><a href="https://www.linkedin.com/in/nimuzzaman" target="_blank" rel="noopener noreferrer">linkedin.com/in/nimuzzaman</a></div>
+          <div class="k">Portfolio</div><div class="v"><a href="https://nayeem.app/" target="_blank" rel="noopener noreferrer">nayeem.app</a></div>
+        </div>
+      </article>
+
+      <aside class="card">
+        <h2>Top Skills</h2>
+        <div class="pillRow" aria-label="Skills">
+          <span class="pill">Docker</span>
+          <span class="pill">Bash</span>
+          <span class="pill">AWS</span>
+          <span class="pill">Go</span>
+          <span class="pill">Laravel</span>
+          <span class="pill">Vue.js</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Kubernetes</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Microservices</span>
+          <span class="pill">Monitoring</span>
+        </div>
+
+        <h2>Certifications</h2>
+        <ul class="list">
+          <li>AR/VR/MR</li>
+          <li>Career Development Program</li>
+          <li>DevOps Career Path Batch - 3</li>
+          <li>Certified Ethical Hacker (CEH)</li>
+          <li>Introduction to Cybersecurity</li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul class="list">
+          <li>Rajshahi University — BE, Information & Communication Engineering (2018–2023)</li>
+          <li>Govt. Shahid Sirajuddin Hossain College — Science (2014–2016)</li>
+          <li>Sekenderpur Secondary School — Science (2012–2014)</li>
+          <li>K.K.R. Secondary School (2009–2011)</li>
+        </ul>
+      </aside>
+
+      <article class="card" style="grid-column: 1 / -1;">
+        <h2>Experience (Pathao — 2 years 4 months)</h2>
+        <div class="timeline" aria-label="Experience timeline">
+          <div class="tItem">
+            <div class="tTop">
+              <div class="tRole">Software Engineer I</div>
+              <div class="tMeta">Jan 2025 – Present · Dhaka, Bangladesh</div>
+            </div>
+            <ul class="tBullets">
+              <li>Built a process to handle “No Entry” parcels for smoother deliveries.</li>
+              <li>Contributed to scalable notification service for better engagement.</li>
+              <li>Worked on slab-based pricing features.</li>
+              <li>Introduced SKU as new item type with pricing and discount logic.</li>
+              <li>Provided API support for merchants.</li>
+            </ul>
+          </div>
+
+          <div class="tItem">
+            <div class="tTop">
+              <div class="tRole">Associate Software Engineer</div>
+              <div class="tMeta">May 2024 – Dec 2024 · Dhaka, Bangladesh</div>
+            </div>
+            <ul class="tBullets">
+              <li>Developer API UI/UX improvements and webhook handling.</li>
+              <li>Redesigned sidebar and Help Center with new tabs and content.</li>
+              <li>Updated password and role-based permissions.</li>
+            </ul>
+          </div>
+
+          <div class="tItem">
+            <div class="tTop">
+              <div class="tRole">Intern Software Engineer</div>
+              <div class="tMeta">Jan 2024 – May 2024</div>
+            </div>
+            <ul class="tBullets">
+              <li>Enhanced Merchant Panel Landing Page, FAQ & Order Tracking UI.</li>
+              <li>Added Bangla support for Zebra printers with custom JS package.</li>
+              <li>Assisted database migrations for Issue Resolution Panel.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div class="status"><span class="statusDot"></span>Available for collaboration</div>
+      <div>© <span id="year"></span> Md. Nimuzzaman — All rights reserved</div>
+    </footer>
+  </main>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
