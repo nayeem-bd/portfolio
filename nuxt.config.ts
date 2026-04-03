@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  ssr: true,
+  nitro: {
+    preset: 'github_pages'
+  },
   app: {
     head: {
       title: 'Md. Nimuzzaman | Software Engineer',

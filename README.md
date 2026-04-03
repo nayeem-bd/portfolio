@@ -1,75 +1,39 @@
-# Nuxt Minimal Starter
+# Portfolio (Nuxt 4)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This repository runs a Nuxt 4 app and is configured for deployment to GitHub Pages.
 
-## Setup
-
-Make sure to install dependencies:
+## Local development
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## Build for production
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+## Generate static site (GitHub Pages)
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+npm run generate
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+The generated static files are written to `.output/public`.
+
+## GitHub Pages deployment
+
+A workflow is provided at `.github/workflows/deploy.yml` that:
+
+1. installs dependencies,
+2. runs `npm run generate`,
+3. uploads `.output/public`, and
+4. deploys it to GitHub Pages.
+
+To use it:
+
+1. Set the default branch to `main` (or update workflow branch trigger).
+2. In repository settings → Pages, set Source to **GitHub Actions**.
+3. Push to `main` (or run the workflow manually).
