@@ -77,11 +77,11 @@
 
           <h2 class="text-xl font-semibold mt-4">Certifications</h2>
           <ul class="list-disc list-inside text-gray-300">
-            <li>AR/VR/MR</li>
-            <li>Career Development Program</li>
             <li>DevOps Career Path Batch - 3</li>
+            <li>Career Development Program</li>
             <li>Certified Ethical Hacker (CEH)</li>
             <li>Introduction to Cybersecurity</li>
+            <li>AR/VR/MR</li>
           </ul>
 
           <h2 class="text-xl font-semibold mt-4">Education</h2>
@@ -102,8 +102,11 @@
                 <span class="text-gray-400 text-sm">Jan 2025 – Present · Dhaka</span>
               </div>
               <ul class="list-disc list-inside text-gray-300 mt-2 space-y-1">
-                <li>Built a process to handle “No Entry” parcels for smoother deliveries.</li>
-                <li>Contributed to scalable notification service for better engagement.</li>
+                <li>Developed a scheduling-enabled notification system for timely updates.</li>
+                <li>Implemented the on-demand payment request feature.</li>
+                <li>Built Internal Inventory module</li>
+                <li>Designed a process to handle “No Entry” parcels, ensuring smoother deliveries.</li>
+                <li>Enhanced a scalable notification service to improve user engagement.</li>
                 <li>Worked on slab-based pricing features.</li>
                 <li>Introduced SKU as new item type with pricing and discount logic.</li>
                 <li>Provided API support for merchants.</li>
