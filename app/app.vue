@@ -1,7 +1,7 @@
 <template>
   <NuxtRouteAnnouncer/>
   <div class="bg-linear-to-br from-gray-900 via-gray-950 to-black text-white font-sans antialiased">
-    <main class="max-w-5xl mx-auto p-6">
+    <main class="max-w-5xl mx-auto p-4 md:p-6">
       <header class="flex flex-col md:flex-row justify-between items-start gap-6 border-b border-gray-700 pb-6">
         <div>
           <h1 class="text-3xl font-bold">Md. Nimuzzaman</h1>
@@ -49,10 +49,10 @@
             <div>Mobile</div>
             <div><a href="tel:+8801912986866" class="hover:underline">+880 1912-986866</a></div>
             <div>Email</div>
-            <div><a href="mailto:nimuzzamanj@gmail.com" class="hover:underline">nimuzzamanj@gmail.com</a></div>
+            <div><a href="mailto:nimuzzamanj@gmail.com" class="hover:underline break-all">nimuzzamanj@gmail.com</a></div>
             <div>LinkedIn</div>
             <div><a href="https://www.linkedin.com/in/nimuzzaman" target="_blank" rel="noopener noreferrer"
-                    class="hover:underline">linkedin.com/in/nimuzzaman</a></div>
+                    class="hover:underline break-all">linkedin.com/in/nimuzzaman</a></div>
             <div>Portfolio</div>
             <div><a href="https://nayeem.app/" target="_blank" rel="noopener noreferrer" class="hover:underline">nayeem.app</a>
             </div>
