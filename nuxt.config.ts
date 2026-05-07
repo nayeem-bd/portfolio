@@ -15,7 +15,10 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()]
   },
   nitro: {
-    preset: 'github_pages'
+    preset: 'github_pages',
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
   },
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
