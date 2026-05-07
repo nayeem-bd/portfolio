@@ -69,7 +69,7 @@ export default defineNuxtConfig({
               addressCountry: 'BD'
             },
             knowsAbout: ['Go', 'Laravel', 'Vue.js', 'PostgreSQL', 'Docker', 'Kubernetes', 'Microservices', 'REST APIs'],
-            sameAs: ['https://www.linkedin.com/in/nimuzzaman']
+            sameAs: ['https://www.linkedin.com/in/nimuzzaman', 'https://github.com/nayeem-bd']
           })
         }
       ]

@@ -43,6 +43,8 @@
         <div class="flex flex-wrap gap-3 mt-2">
           <a href="mailto:nimuzzamanj@gmail.com"
              class="px-4 py-2.5 rounded-lg bg-linear-to-br from-(--accent) to-(--accent2) text-black font-medium">Email</a>
+          <a href="https://github.com/nayeem-bd" target="_blank" rel="noopener noreferrer"
+             class="px-4 py-2.5 rounded-lg border border-gray-600 hover:border-gray-400">GitHub</a>
           <a href="https://www.linkedin.com/in/nimuzzaman" target="_blank" rel="noopener noreferrer"
              class="px-4 py-2.5 rounded-lg border border-gray-600 hover:border-gray-400">LinkedIn</a>
           <a href="tel:+8801912986866"
@@ -57,6 +59,9 @@
           <div>LinkedIn</div>
           <div><a href="https://www.linkedin.com/in/nimuzzaman" target="_blank" rel="noopener noreferrer"
                   class="hover:underline break-all">linkedin.com/in/nimuzzaman</a></div>
+          <div>GitHub</div>
+          <div><a href="https://github.com/nayeem-bd" target="_blank" rel="noopener noreferrer"
+                  class="hover:underline break-all">github.com/nayeem-bd</a></div>
         </div>
       </article>
 
@@ -187,6 +192,8 @@
       <div class="flex flex-wrap justify-center gap-3">
         <a href="mailto:nimuzzamanj@gmail.com"
            class="px-5 py-2.5 rounded-lg bg-linear-to-br from-(--accent) to-(--accent2) text-black font-medium">nimuzzamanj@gmail.com</a>
+        <a href="https://github.com/nayeem-bd" target="_blank" rel="noopener noreferrer"
+           class="px-5 py-2.5 rounded-lg border border-gray-600 hover:border-gray-400">GitHub</a>
         <a href="https://www.linkedin.com/in/nimuzzaman" target="_blank" rel="noopener noreferrer"
            class="px-5 py-2.5 rounded-lg border border-gray-600 hover:border-gray-400">LinkedIn</a>
       </div>
