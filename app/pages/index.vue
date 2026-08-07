@@ -4,7 +4,7 @@
       <div class="flex flex-col gap-5 min-w-0">
         <div class="flex items-center gap-4 sm:gap-5">
           <img
-            src="/profile.jpg"
+            :src="profileSrc"
             alt=""
             width="1200"
             height="1200"
@@ -210,4 +210,7 @@
 import { PROJECTS } from '~/constants/projects'
 
 const year = new Date().getFullYear()
+
+// baseURL comes back without a trailing slash, so normalise before joining.
+const profileSrc = `${useRuntimeConfig().app.baseURL.replace(/\/?$/, '/')}profile.jpg`
 </script>

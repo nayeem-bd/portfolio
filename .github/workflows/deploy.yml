@@ -33,12 +33,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate static site
-        run: npm run generate
-
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v6
+
+      # base_path is "/portfolio" for the project-page URL and "/" once a custom
+      # domain is active, so assets are emitted under whatever path Pages serves.
+      - name: Generate static site
+        run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: ${{ steps.pages.outputs.base_path }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

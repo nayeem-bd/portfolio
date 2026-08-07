@@ -1,6 +1,9 @@
 import tailwindcss from '@tailwindcss/vite'
 
 const SITE_URL = 'https://nayeem.app'
+// GitHub Pages serves project sites under /<repo>/, so every public asset URL
+// has to carry the base. Normalised to always end in a slash.
+const BASE_URL = (process.env.NUXT_APP_BASE_URL || '/').replace(/\/?$/, '/')
 const SITE_TITLE = 'Md. Nimuzzaman | Software Engineer'
 const SITE_DESC =
   'Full-stack engineer at Pathao. I build merchant-facing services in Go, Laravel, and Vue — pricing engines, notification systems, and the APIs they sit behind.'
@@ -21,7 +24,7 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL: BASE_URL,
     head: {
       htmlAttrs: { lang: 'en' },
       title: SITE_TITLE,
@@ -48,7 +51,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'canonical', href: SITE_URL },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: `${BASE_URL}favicon.ico` }
       ],
       script: [
         {
