@@ -53,10 +53,6 @@
         </ul>
       </section>
 
-      <section v-if="!project.problem && !project.approach && !project.outcome && !project.links?.length"
-               class="mt-10 text-sm text-gray-500 italic">
-        Full case study coming soon.
-      </section>
     </article>
 
     <nav class="mt-12 pt-6 border-t border-gray-700 flex flex-wrap justify-between gap-4 text-sm">
@@ -79,22 +75,22 @@
 </template>
 
 <script setup lang="ts">
-import { PROJECTS, findProject } from '~/constants/projects'
+import { CASE_STUDIES, findProject, hasCaseStudy } from '~/constants/projects'
+import { SITE_URL } from '~/constants/site'
 
 const route = useRoute()
 const slug = route.params.slug as string
 
 const project = findProject(slug)
 
-if (!project) {
+if (!project || !hasCaseStudy(project)) {
   throw createError({ statusCode: 404, statusMessage: 'Project not found', fatal: true })
 }
 
-const currentIndex = PROJECTS.findIndex((p) => p.slug === project.slug)
-const prevProject = currentIndex > 0 ? PROJECTS[currentIndex - 1] : null
-const nextProject = currentIndex < PROJECTS.length - 1 ? PROJECTS[currentIndex + 1] : null
+const currentIndex = CASE_STUDIES.findIndex((p) => p.slug === project.slug)
+const prevProject = currentIndex > 0 ? CASE_STUDIES[currentIndex - 1] : null
+const nextProject = currentIndex < CASE_STUDIES.length - 1 ? CASE_STUDIES[currentIndex + 1] : null
 
-const SITE_URL = 'https://nayeem.app'
 const pageTitle = `${project.title} — Md. Nimuzzaman`
 const pageUrl = `${SITE_URL}/projects/${project.slug}`
 

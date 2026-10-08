@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 
 # Link to your sitemap
-Sitemap: https://nayeem.app/sitemap.xml
+Sitemap: https://nayeem-bd.github.io/portfolio/sitemap.xml

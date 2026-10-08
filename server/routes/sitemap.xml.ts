@@ -1,6 +1,5 @@
-import { PROJECTS } from '~/constants/projects'
-
-const SITE_URL = 'https://nayeem.app'
+import { CASE_STUDIES } from '~/constants/projects'
+import { SITE_URL } from '~/constants/site'
 
 export default defineEventHandler((event) => {
   setHeader(event, 'content-type', 'application/xml; charset=utf-8')
@@ -9,7 +8,7 @@ export default defineEventHandler((event) => {
 
   const entries = [
     { loc: `${SITE_URL}/`, priority: '1.0' },
-    ...PROJECTS.map((p) => ({
+    ...CASE_STUDIES.map((p) => ({
       loc: `${SITE_URL}/projects/${p.slug}`,
       priority: '0.8'
     }))

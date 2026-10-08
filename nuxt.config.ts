@@ -1,12 +1,12 @@
 import tailwindcss from '@tailwindcss/vite'
+import { SITE_URL } from './app/constants/site'
 
-const SITE_URL = 'https://nayeem.app'
 // GitHub Pages serves project sites under /<repo>/, so every public asset URL
 // has to carry the base. Normalised to always end in a slash.
 const BASE_URL = (process.env.NUXT_APP_BASE_URL || '/').replace(/\/?$/, '/')
-const SITE_TITLE = 'Md. Nimuzzaman | Software Engineer'
+const SITE_TITLE = 'Md. Nimuzzaman — Backend Software Engineer (Go, Laravel, Vue) at Pathao'
 const SITE_DESC =
-  'Full-stack engineer at Pathao. I build merchant-facing services in Go, Laravel, and Vue — pricing engines, notification systems, and the APIs they sit behind.'
+  'Backend-focused full-stack engineer at Pathao. I build Go and Laravel APIs and event-driven services for parcel, payout and notification flows, and the Vue front-ends merchants use.'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
         { name: 'author', content: 'Md. Nimuzzaman' },
 
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: SITE_URL },
+        { property: 'og:url', content: `${SITE_URL}/` },
         { property: 'og:title', content: SITE_TITLE },
         { property: 'og:description', content: SITE_DESC },
         { property: 'og:image', content: `${SITE_URL}/profile.jpg` },
@@ -50,7 +50,7 @@ export default defineNuxtConfig({
         { name: 'twitter:image', content: `${SITE_URL}/profile.jpg` }
       ],
       link: [
-        { rel: 'canonical', href: SITE_URL },
+        { rel: 'canonical', href: `${SITE_URL}/` },
         { rel: 'icon', type: 'image/x-icon', href: `${BASE_URL}favicon.ico` }
       ],
       script: [
@@ -60,19 +60,34 @@ export default defineNuxtConfig({
             '@context': 'https://schema.org',
             '@type': 'Person',
             name: 'Md. Nimuzzaman',
-            jobTitle: 'Software Engineer',
+            jobTitle: 'Backend Software Engineer',
             worksFor: { '@type': 'Organization', name: 'Pathao Ltd', url: 'https://pathao.com' },
-            url: SITE_URL,
+            url: `${SITE_URL}/`,
             image: `${SITE_URL}/profile.jpg`,
             email: 'nimuzzamanj@gmail.com',
             address: {
               '@type': 'PostalAddress',
-              addressLocality: 'Jessore',
-              addressRegion: 'Khulna',
+              addressLocality: 'Dhaka',
               addressCountry: 'BD'
             },
-            knowsAbout: ['Go', 'Laravel', 'Vue.js', 'PostgreSQL', 'Docker', 'Kubernetes', 'Microservices', 'REST APIs'],
-            sameAs: ['https://www.linkedin.com/in/nimuzzaman', 'https://github.com/nayeem-bd']
+            knowsAbout: [
+              'Go',
+              'Laravel',
+              'PostgreSQL',
+              'RabbitMQ',
+              'Redis',
+              'REST APIs',
+              'Microservices',
+              'Event-driven architecture',
+              'Docker',
+              'Vue.js',
+              'Tailwind CSS'
+            ],
+            sameAs: [
+              'https://www.linkedin.com/in/nimuzzaman',
+              'https://github.com/nayeem-bd',
+              'https://www.npmjs.com/package/unicode2ascii'
+            ]
           })
         }
       ]
