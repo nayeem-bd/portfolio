@@ -14,6 +14,8 @@ export type Project = {
   stack: string
   description: string
   tags: string[]
+  // Shown as a large card at the top of the projects section.
+  featured?: boolean
   // Side project, not built at Pathao.
   personal?: boolean
   heroImage?: ProjectImage
@@ -26,6 +28,7 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     slug: 'notification-scheduler',
+    featured: true,
     title: 'Notification Scheduling',
     stack: 'Go · RabbitMQ · Cron · Vue',
     description:
@@ -34,6 +37,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: 'no-entry-parcels',
+    featured: true,
     title: 'No Entry Parcel Flow',
     stack: 'Laravel · Vue',
     description:
@@ -42,6 +46,7 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: 'sku-pricing-engine',
+    featured: true,
     title: 'Slab-based SKU Pricing',
     stack: 'Laravel · Vue · PostgreSQL',
     description:
