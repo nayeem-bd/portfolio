@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect x="0" y="0" width="1200" height="8" fill="url(#accent)"/>
+  <rect x="96" y="150" width="96" height="6" rx="3" fill="#22d3ee"/>
+  <text x="96" y="262" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="84" font-weight="700" fill="#f5f5f5">Md. Nimuzzaman</text>
+  <text x="96" y="338" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="44" fill="#d4d4d4">Backend Software Engineer</text>
+  <text x="96" y="412" font-family="Menlo, Monaco, Consolas, monospace" font-size="32" fill="#67e8f9">Go · Laravel · PostgreSQL · RabbitMQ</text>
+  <text x="96" y="540" font-family="Menlo, Monaco, Consolas, monospace" font-size="26" fill="#9ca3af">nayeem-bd.github.io/portfolio</text>
+</svg>

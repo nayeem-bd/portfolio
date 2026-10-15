@@ -4,9 +4,9 @@
       <div class="flex items-center gap-4 sm:gap-5">
         <img
           :src="profileSrc"
-          alt=""
-          width="1200"
-          height="1200"
+          alt="Md. Nimuzzaman"
+          width="240"
+          height="240"
           class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover ring-2 ring-cyan-400/40 shrink-0"/>
         <div class="min-w-0">
           <h1 class="text-3xl md:text-4xl font-bold leading-tight">Md. Nimuzzaman</h1>
@@ -142,7 +142,7 @@
     <section class="mt-12 lg:mt-16 bg-gray-800/60 border border-gray-700 rounded-xl p-6 sm:p-8 lg:p-10 text-center">
       <h2 class="text-2xl md:text-3xl font-semibold mb-2">Want to work together?</h2>
       <p class="text-gray-300 mb-5 max-w-xl mx-auto">
-        I'm open to interesting backend, full-stack, and platform-engineering work — both full-time and
+        I'm open to backend and full-stack roles — Go, Laravel and event-driven services — full-time or
         project-based.
       </p>
       <div class="flex flex-wrap justify-center gap-3">
@@ -238,5 +238,5 @@ const CERTIFICATIONS = [
 const year = new Date().getFullYear()
 
 // baseURL comes back without a trailing slash, so normalise before joining.
-const profileSrc = `${useRuntimeConfig().app.baseURL.replace(/\/?$/, '/')}profile.jpg`
+const profileSrc = `${useRuntimeConfig().app.baseURL.replace(/\/?$/, '/')}profile-240.jpg`
 </script>

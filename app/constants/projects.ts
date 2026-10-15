@@ -68,7 +68,8 @@ export const PROJECTS: Project[] = [
     description:
       'Clean-architecture Go REST API with Redis cache, a RabbitMQ worker and unit tests. Infrastructure with Terraform, Ansible to K3s, GitHub Actions, and Prometheus + Grafana.',
     tags: ['Backend', 'DevOps'],
-    personal: true
+    personal: true,
+    links: [{ label: 'GitHub', url: 'https://github.com/nayeem-bd/Todo-App' }]
   },
   {
     slug: 'spendwise',

@@ -38,16 +38,16 @@ export default defineNuxtConfig({
         { property: 'og:url', content: `${SITE_URL}/` },
         { property: 'og:title', content: SITE_TITLE },
         { property: 'og:description', content: SITE_DESC },
-        { property: 'og:image', content: `${SITE_URL}/profile.jpg` },
+        { property: 'og:image', content: `${SITE_URL}/og.png` },
         { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '1200' },
-        { property: 'og:image:alt', content: 'Md. Nimuzzaman' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'Md. Nimuzzaman — Backend Software Engineer' },
         { property: 'og:locale', content: 'en_US' },
 
-        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: SITE_TITLE },
         { name: 'twitter:description', content: SITE_DESC },
-        { name: 'twitter:image', content: `${SITE_URL}/profile.jpg` }
+        { name: 'twitter:image', content: `${SITE_URL}/og.png` }
       ],
       link: [
         { rel: 'canonical', href: `${SITE_URL}/` },
